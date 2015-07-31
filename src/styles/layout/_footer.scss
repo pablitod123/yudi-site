@@ -16,3 +16,32 @@ footer {
         line-height: 40px;
     }
 }
+
+// Social Buttons currently only on index
+// currently only in the footer
+ul.social-buttons {
+    margin-bottom: 0;
+    li a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 100%;
+        font-size: 20px;
+        line-height: 40px;
+        outline: 0;
+        color: $white;
+        background-color: $color_log_cabin_approx;
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: background-color .3s;
+        &:hover {
+            background-color: $color_madison_approx;
+        }
+        &:focus {
+            background-color: $color_madison_approx;
+        }
+        &:active {
+            background-color: $color_madison_approx;
+        }
+    }
+}

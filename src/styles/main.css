@@ -603,6 +603,21 @@ img::-moz-selection {
   color: #1ba6f7;
 }
 
+.subMenu {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+}
+
+.sticky {
+  top: 0;
+  position: fixed;
+}
+
+.navbar-space {
+  top: 790px;
+}
+
 header {
   text-align: left;
   color: #fff;
@@ -955,6 +970,39 @@ section h3.section-subheading {
   transform: rotate(90deg);
 }
 
+#modal-btn {
+  border-radius: 0;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  outline: 0;
+  color: #fff;
+  background-color: #222;
+  transition: background-color 0.3s;
+}
+
+ul.social-buttons li a:hover {
+  background-color: #122660;
+}
+
+ul.social-buttons li a:focus {
+  background-color: #122660;
+}
+
+ul.social-buttons li a:active {
+  background-color: #122660;
+}
+
 .bg-dark-blue {
   background-color: #122660;
 }
@@ -1113,10 +1161,6 @@ html {
   margin-bottom: 8%;
 }
 
-#modal-btn {
-  border-radius: 0;
-}
-
 .rankingsbg {
   background-attachment: scroll;
   background-image: url(../img/wall_street.jpg);
@@ -1127,21 +1171,6 @@ html {
 
 .white {
   color: #fff;
-}
-
-.subMenu {
-  position: absolute;
-  z-index: 1000;
-  width: 100%;
-}
-
-.sticky {
-  top: 0;
-  position: fixed;
-}
-
-.navbar-space {
-  top: 790px;
 }
 
 .open .dropdown-toggle.btn-primary {
