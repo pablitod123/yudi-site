@@ -5,17 +5,10 @@ block title
 
 block content
     include templates/partials/nav
-    header
-        .container
-            .row
-              .col-lg-12.spacer.col-md-0
-              |         
-              .down-arrow
-                a#down-arrow.page-scroll.fa.fa-sort-down.fa-3x.down-arrow-margin(href='#about', style='font-style: italic')
-
+    include templates/partials/header
 
     include templates/partials/footer
-    include templates/partials/bios 
+    include templates/partials/bios
 
     //- #section01.pane.hello
     //-     .wrapper

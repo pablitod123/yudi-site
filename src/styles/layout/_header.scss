@@ -35,10 +35,9 @@ header {
 }
 #down-arrow {
     color: $white;
+    font-style: italic;
+    margin-bottom: 8%;
     &:hover {
         color: $color_madison_approx;
     }
-}
-.down-arrow-margin {
-    margin-bottom: 8%;
 }
