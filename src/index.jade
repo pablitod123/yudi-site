@@ -1,14 +1,25 @@
 extends templates/wrapper
 
 block title
-    | YUDI - Homes
+    | YUDI - Homepage
 
 block content
     include templates/layouts/nav
+    
     include templates/partials/header
     include templates/partials/calendar
-
+    include templates/partials/about
+    include templates/partials/team
     include templates/partials/contact
+
+    // - Global Bottom
     include templates/layouts/footer
+    // - Modals for bio section
     include templates/partials/bios
     
+block scripts
+    // refactor and minify 
+    script( src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+    script( src="assets/js/bootstrap.min.js" )
+    script( src="assets/js/jqBootstrapValidation.js" ) // Refactor to fit into app.min
+    script( src='assets/js/app.min.js' )

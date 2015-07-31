@@ -1075,6 +1075,13 @@ aside.clients img {
   border-radius: 0;
 }
 
+.promoVideo {
+  padding-top: 50px;
+  height: 400px;
+  width: 600px;
+  border-style: none;
+}
+
 .bg-dark-blue {
   background-color: #122660;
 }

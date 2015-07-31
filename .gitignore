@@ -10,6 +10,5 @@ src/styles/vendors
 src/scripts/
 src/templates/partials
 src/templates/helpers
-src/templates/layouts
 *.md
 *.styl
