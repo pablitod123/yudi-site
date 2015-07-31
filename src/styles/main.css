@@ -469,6 +469,10 @@ h2 {
   text-shadow: -1px -1px 0 #122660;
 }
 
+.small-text {
+  font-size: 14px;
+}
+
 .btn-primary {
   border-color: #122660;
   text-transform: uppercase;
@@ -618,6 +622,12 @@ img::-moz-selection {
   top: 790px;
 }
 
+.navlogo {
+  max-width: 60px;
+  height: auto;
+  margin-top: 0;
+}
+
 header {
   text-align: left;
   color: #fff;
@@ -671,6 +681,35 @@ footer ul.quicklinks {
   text-transform: none;
   font-family: Montserrat, Times, Arial, sans-serif;
   line-height: 40px;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  outline: 0;
+  color: #fff;
+  background-color: #222;
+  transition: background-color 0.3s;
+}
+
+ul.social-buttons li a:hover {
+  background-color: #122660;
+}
+
+ul.social-buttons li a:focus {
+  background-color: #122660;
+}
+
+ul.social-buttons li a:active {
+  background-color: #122660;
 }
 
 section {
@@ -974,35 +1013,6 @@ section h3.section-subheading {
   border-radius: 0;
 }
 
-ul.social-buttons {
-  margin-bottom: 0;
-}
-
-ul.social-buttons li a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  font-size: 20px;
-  line-height: 40px;
-  outline: 0;
-  color: #fff;
-  background-color: #222;
-  transition: background-color 0.3s;
-}
-
-ul.social-buttons li a:hover {
-  background-color: #122660;
-}
-
-ul.social-buttons li a:focus {
-  background-color: #122660;
-}
-
-ul.social-buttons li a:active {
-  background-color: #122660;
-}
-
 .bg-dark-blue {
   background-color: #122660;
 }
@@ -1058,6 +1068,19 @@ ul.social-buttons li a:active {
   border: 2px solid #ffa500;
 }
 
+.black-text {
+  color: #122660;
+}
+
+.custlightblue {
+  background-color: #1ba6f7;
+  opacity: 0.5;
+}
+
+.blue {
+  color: #122660;
+}
+
 .about-text {
   padding-top: 7px;
 }
@@ -1095,14 +1118,6 @@ ul.social-buttons li a:active {
   max-width: 60px;
   height: auto;
   margin-top: 0;
-}
-
-.black-text {
-  color: #122660;
-}
-
-.small-text {
-  font-size: 14px;
 }
 
 .custlightblue {
@@ -1183,35 +1198,6 @@ html {
 
 aside.clients img {
   margin: 50px auto;
-}
-
-ul.social-buttons {
-  margin-bottom: 0;
-}
-
-ul.social-buttons li a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  font-size: 20px;
-  line-height: 40px;
-  outline: 0;
-  color: #fff;
-  background-color: #222;
-  transition: background-color 0.3s;
-}
-
-ul.social-buttons li a:hover {
-  background-color: #122660;
-}
-
-ul.social-buttons li a:focus {
-  background-color: #122660;
-}
-
-ul.social-buttons li a:active {
-  background-color: #122660;
 }
 
 .dropdown .open {
