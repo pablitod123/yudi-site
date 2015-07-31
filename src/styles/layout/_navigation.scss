@@ -94,3 +94,19 @@
 .mydropdown {
     color: $black;
 }
+
+.open .dropdown-toggle {
+    &.btn-primary {
+        @extend %extend_2;
+        background-image: none;
+    }
+    &.btn-xl {
+        @extend %extend_3;
+        background-image: none;
+    }
+}
+
+// TODO: can this serevice without it
+.dropdown .open {
+    background: $black;
+}

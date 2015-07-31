@@ -668,6 +668,18 @@ img::-moz-selection {
   color: #000;
 }
 
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+.open .dropdown-toggle.btn-xl {
+  background-image: none;
+}
+
+.dropdown .open {
+  background: #000;
+}
+
 header {
   text-align: left;
   color: #fff;
@@ -700,6 +712,22 @@ header .intro-lead-in {
   font-size: 22px;
   font-style: italic;
   line-height: 22px;
+}
+
+.down-arrow {
+  text-align: center;
+}
+
+#down-arrow {
+  color: #fff;
+}
+
+#down-arrow:hover {
+  color: #122660;
+}
+
+.down-arrow-margin {
+  margin-bottom: 8%;
 }
 
 footer {
@@ -1136,40 +1164,12 @@ aside.clients img {
   margin-bottom: 9px;
 }
 
-.down-arrow {
-  text-align: center;
-}
-
-#down-arrow {
-  color: #fff;
-}
-
-#down-arrow:hover {
-  color: #122660;
-}
-
-.down-arrow-margin {
-  margin-bottom: 8%;
-}
-
 .rankingsbg {
   background-attachment: scroll;
   background-image: url(../img/wall_street.jpg);
   background-position: center center;
   background-repeat: none;
   background-size: cover;
-}
-
-.open .dropdown-toggle.btn-primary {
-  background-image: none;
-}
-
-.open .dropdown-toggle.btn-xl {
-  background-image: none;
-}
-
-.dropdown .open {
-  background: #000;
 }
 
 .competition b {

@@ -28,3 +28,17 @@ header {
         line-height: 22px;
     }
 }
+
+// TODO: Some very inefficient code
+.down-arrow {
+    text-align: center;
+}
+#down-arrow {
+    color: $white;
+    &:hover {
+        color: $color_madison_approx;
+    }
+}
+.down-arrow-margin {
+    margin-bottom: 8%;
+}

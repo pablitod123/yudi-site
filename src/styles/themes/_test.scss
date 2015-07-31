@@ -1,29 +1,19 @@
-
+// TODO: Appears to not even be used, but leaving in just in case I missed it somewhere in the navbar jungle
 .logo {
     max-width: 350px;
     height: auto;
     margin-top: 230px;
 }
+
+// TODO: single magic number class is wasteful
 .spacer {
     margin: 28%;
 }
 
+// TODO: describe more clearly
 .biggerborder {
     border: 7px solid $color_madison_approx;
     margin-bottom: 9px;
-}
-
-.down-arrow {
-    text-align: center;
-}
-#down-arrow {
-    color: $white;
-    &:hover {
-        color: $color_madison_approx;
-    }
-}
-.down-arrow-margin {
-    margin-bottom: 8%;
 }
 
 // Only on Rankings page
@@ -33,21 +23,6 @@
     background-position: center center;
     background-repeat: none;
     background-size: cover;
-}
-
-.open .dropdown-toggle {
-    &.btn-primary {
-        @extend %extend_2;
-        background-image: none;
-    }
-    &.btn-xl {
-        @extend %extend_3;
-        background-image: none;
-    }
-}
-
-.dropdown .open {
-    background: $black;
 }
 
 // lazy target for the networking page
