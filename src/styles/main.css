@@ -405,7 +405,7 @@ th {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
-  font-family: Times, Times, Arial, sans-serif;
+  font-family: "Droid Serif", "Droid Serif", "Arial", sans-serif;
   font-weight: 700;
   color: #122660;
 }
@@ -435,7 +435,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: Times, Times, Arial, sans-serif;
+  font-family: "Droid Serif", "Droid Serif", "Arial", sans-serif;
   webkit-tap-highlight-color: #122660;
   max-width: 100%;
   overflow-x: hidden;
@@ -502,7 +502,7 @@ h2 {
 .btn-primary {
   border-color: #122660;
   text-transform: uppercase;
-  font-family: Times, Arial, sans-serif;
+  font-family: "Droid Serif", "Arial", sans-serif;
   font-weight: 400;
   letter-spacing: 3px;
   color: #fff;
@@ -519,7 +519,7 @@ h2 {
   border-color: #000;
   border-radius: 3px;
   text-transform: uppercase;
-  font-family: Times, Arial, sans-serif, Montserrat;
+  font-family: "Droid Serif", "Arial", sans-serif, "Montserrat";
   font-size: 18px;
   font-weight: 700;
   color: #fff;
@@ -575,7 +575,7 @@ img::-moz-selection {
 
 .navbar-default {
   border-color: transparent;
-  background-color: #222;
+  background-color: #122660;
 }
 
 .navbar-default .navbar-collapse {
@@ -617,7 +617,7 @@ img::-moz-selection {
 
 .navbar-default .nav li a {
   text-transform: uppercase;
-  font-family: Times, Times, Arial, sans-serif;
+  font-family: "Droid Serif", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
@@ -635,7 +635,7 @@ img::-moz-selection {
 }
 
 .navbar-brand {
-  font-family: Times, Arial, cursive;
+  font-family: "Droid Serif", "Arial", cursive;
   color: #122660;
 }
 
@@ -700,7 +700,7 @@ header .intro-text .intro-heading {
   margin-left: 25px;
   margin-top: -150px;
   text-transform: uppercase;
-  font-family: Times, Times, Arial, sans-serif;
+  font-family: "Droid Serif", "Droid Serif", "Arial", sans-serif;
   font-size: 40px;
   line-height: 50px;
   text-shadow: -2px -2px 0 #122660, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
@@ -708,7 +708,7 @@ header .intro-text .intro-heading {
 
 header .intro-lead-in {
   margin-bottom: 25px;
-  font-family: Droid Serif, Times, Arial, sans-serif;
+  font-family: "Noto Serif", "Droid Serif", "Arial", sans-serif;
   font-size: 22px;
   font-style: italic;
   line-height: 22px;
@@ -738,7 +738,7 @@ footer {
 footer span.copyright {
   text-transform: uppercase;
   text-transform: none;
-  font-family: Times, Arial, sans-serif;
+  font-family: "Droid Serif", "Arial", sans-serif;
   line-height: 40px;
   font-size: 12px;
 }
@@ -747,7 +747,7 @@ footer ul.quicklinks {
   margin-bottom: 0;
   text-transform: uppercase;
   text-transform: none;
-  font-family: Montserrat, Times, Arial, sans-serif;
+  font-family: "Montserrat", "Droid Serif", "Arial", sans-serif;
   line-height: 40px;
 }
 
@@ -809,14 +809,14 @@ section#contact .form-group textarea.form-control {
 
 section#contact:-moz-placeholder {
   text-transform: uppercase;
-  font-family: Montserrat, Times, Times, Arial, sans-serif;
+  font-family: "Montserrat", "Droid Serif", "Droid Serif", "Arial", sans-serif;
   font-weight: 700;
   color: #bbb;
 }
 
 section#contact:-ms-input-placeholder {
   text-transform: uppercase;
-  font-family: Montserrat, Times, Times, Arial, sans-serif;
+  font-family: "Montserrat", "Droid Serif", "Droid Serif", "Arial", sans-serif;
   font-weight: 700;
   color: #bbb;
 }
@@ -832,14 +832,14 @@ section#contact .form-control:focus {
 
 section#contact::-webkit-input-placeholder {
   text-transform: uppercase;
-  font-family: Montserrat, Times, Times, Arial, sans-serif;
+  font-family: "Montserrat", "Droid Serif", "Droid Serif", "Arial", sans-serif;
   font-weight: 700;
   color: #bbb;
 }
 
 section#contact::-moz-placeholder {
   text-transform: uppercase;
-  font-family: Montserrat, Times, Times, Arial, sans-serif;
+  font-family: "Montserrat", "Droid Serif", "Droid Serif", "Arial", sans-serif;
   font-weight: 700;
   color: #bbb;
 }
@@ -853,7 +853,7 @@ section h2.section-heading {
 section h3.section-subheading {
   margin-bottom: 75px;
   text-transform: none;
-  font-family: Droid Serif, Times, Times, Arial, sans-serif;
+  font-family: "Noto Serif", "Droid Serif", "Droid Serif", "Arial", sans-serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
@@ -884,7 +884,7 @@ section h3.section-subheading {
   }
   header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: Droid Serif, Times, Times, Arial, sans-serif;
+    font-family: "Noto Serif", "Droid Serif", "Droid Serif", "Arial", sans-serif;
     font-size: 40px;
     font-style: italic;
     line-height: 40px;
@@ -892,7 +892,7 @@ section h3.section-subheading {
   header .intro-text .intro-heading {
     margin-bottom: 50px;
     text-transform: uppercase;
-    font-family: Times, Times, Arial, sans-serif;
+    font-family: "Droid Serif", "Droid Serif", "Arial", sans-serif;
     font-size: 50px;
     font-weight: 0;
     letter-spacing: 5px;
@@ -972,7 +972,7 @@ aside.clients img {
 
 #portfolio .portfolio-item .portfolio-caption p {
   margin: 0;
-  font-family: Times, Arial, sans-serif;
+  font-family: "Droid Serif", "Arial", sans-serif;
   font-size: 16px;
   font-style: italic;
 }
@@ -1028,7 +1028,7 @@ aside.clients img {
 
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
-  font-family: Times, Arial, sans-serif;
+  font-family: "Droid Serif", "Arial", sans-serif;
   font-size: 16px;
   font-style: italic;
 }

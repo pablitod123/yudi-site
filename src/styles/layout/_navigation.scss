@@ -1,8 +1,8 @@
 //TODO: Refactor if time permits
 .navbar-default {
     border-color: transparent;
-    background-color: $color_log_cabin_approx;
-    
+    //background-color: $color_log_cabin_approx;
+    background-color: $color_madison_approx;
     .navbar-collapse {
         border-color: $white_2;
     }
@@ -46,7 +46,7 @@
     }
     .nav li a {
         text-transform: uppercase;
-        font-family: $font_1, $font_1, $font_2, $font_3;
+        font-family: $font_1, $font_2, $font_3;
         font-weight: 400;
         font-size: 14px;
         letter-spacing: 1px;
