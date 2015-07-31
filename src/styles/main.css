@@ -720,14 +720,12 @@ header .intro-lead-in {
 
 #down-arrow {
   color: #fff;
+  font-style: italic;
+  margin-bottom: 8%;
 }
 
 #down-arrow:hover {
   color: #122660;
-}
-
-.down-arrow-margin {
-  margin-bottom: 8%;
 }
 
 footer {
