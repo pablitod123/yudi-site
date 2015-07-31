@@ -1,5 +1,8 @@
 extends templates/wrapper
 
+block vars
+    include data/boardData
+
 block title
     | YUDI - Homepage
 
@@ -15,6 +18,7 @@ block content
     // - Global Bottom
     include templates/layouts/footer
     include templates/partials/bios
+
     
 block scripts
     // refactor and minify 
@@ -23,5 +27,3 @@ block scripts
     script( src="assets/js/jqBootstrapValidation.js" ) // Refactor to fit into app.min
     script( src='assets/js/app.min.js' )
 
-block vars
-    include data/boardData
