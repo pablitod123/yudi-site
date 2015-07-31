@@ -1,0 +1,71 @@
+section {
+    padding: 100px 0;
+    &#contact {
+        background-color: $color_log_cabin_approx;
+        background-image: $url_1;
+        background-position: center;
+        background-repeat: no-repeat;
+        .section-heading {
+            color: $white;
+        }
+        .form-group {
+            margin-bottom: 25px;
+            input {
+                padding: 20px;
+                &.form-control {
+                    height: auto;
+                }
+            }
+            textarea {
+                padding: 20px;
+                &.form-control {
+                    height: 236px;
+                }
+            }
+        }
+        &:-moz-placeholder {
+            text-transform: uppercase;
+            font-family: $font_4, $font_1, $font_1, $font_2, $font_3;
+            font-weight: 700;
+            color: $color_pink_swan_approx;
+        }
+        &:-ms-input-placeholder {
+            text-transform: uppercase;
+            font-family: $font_4, $font_1, $font_1, $font_2, $font_3;
+            font-weight: 700;
+            color: $color_pink_swan_approx;
+        }
+        .text-danger {
+            color: $color_cinnabar_approx;
+        }
+        .form-control:focus {
+            border-color: $color_madison_approx;
+            box-shadow: none;
+        }
+    }
+    &#contact::-webkit-input-placeholder {
+        text-transform: uppercase;
+        font-family: $font_4, $font_1, $font_1, $font_2, $font_3;
+        font-weight: 700;
+        color: $color_pink_swan_approx;
+    }
+    &#contact::-moz-placeholder {
+        text-transform: uppercase;
+        font-family: $font_4, $font_1, $font_1, $font_2, $font_3;
+        font-weight: 700;
+        color: $color_pink_swan_approx;
+    }
+    h2.section-heading {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+    h3.section-subheading {
+        margin-bottom: 75px;
+        text-transform: none;
+        font-family: $font_0, $font_1, $font_1, $font_2, $font_3;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+    }
+}

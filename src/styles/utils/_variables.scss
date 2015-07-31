@@ -1,0 +1,64 @@
+ //colors
+$color_madison_approx: #122660;
+$color_log_cabin_approx: #222;
+$color_dodger_blue_approx: #1ba6f7;
+$color_onahau_approx: #cdeef7;
+$seashell: #f1f1f1;
+$black: #000;
+$white: #fff;
+$white_2: rgba(255,255,255,.02);
+$color_pink_swan_approx: #bbb;
+$color_cinnabar_approx: #e74c3c;
+$color_sunglow_approx: #fed136;
+$color_mercury_approx: #e6e6e6;
+$color_guardsman_red_approx: #cc0000;
+$web_orange: #ffa500;
+$color_cerulean_blue_approx: #2a4cb2;
+$color_bright_turquoise_approx: #19d3e8;
+
+//fonts
+$font_0: Droid Serif;
+$font_1: Times;
+$font_2: Arial;
+$font_3: sans-serif;
+$font_4: Montserrat;
+$font_cursive: cursive;
+
+//urls
+$url_0: url(../img/bull2.jpeg);
+$url_1: url(../img/contact.jpg);
+$url_2: url(../img/wall_street.jpg);
+
+//@extend-elements
+//original selectors
+//h1, h2, h3, h4, h5, h6
+%extend_1 {
+    text-transform: uppercase;
+    font-family: $font_1, $font_1, $font_2, $font_3;
+    font-weight: 700;
+    color: $color_madison_approx;
+}
+
+//original selectors
+//.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary
+%extend_2 {
+    border-color: $color_dodger_blue_approx;
+    color: $white;
+    background-color: $color_dodger_blue_approx;
+}
+
+//original selectors
+//.btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl
+%extend_3 {
+    border-color: $color_dodger_blue_approx;
+    color: $white;
+    background-color: $color_dodger_blue_approx;
+}
+
+//original selectors
+//.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus
+%extend_4 {
+    background-color: $color_madison_approx;
+    color: $color_dodger_blue_approx;
+    border-radius: 3px;
+}

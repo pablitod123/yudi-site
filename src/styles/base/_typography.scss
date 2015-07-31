@@ -1,0 +1,54 @@
+// Typography Things
+// =================
+body {
+    overflow-x: hidden;
+    font-family: $font_1, $font_1, $font_2, $font_3;
+    webkit-tap-highlight-color: $color_madison_approx;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.text-muted {
+    color: $color_log_cabin_approx;
+}
+.text-primary {
+    color: $color_dodger_blue_approx;
+}
+p {
+    font-size: 20px;
+    line-height: 1.75;
+    color: $color_madison_approx;
+    font-weight: 20;
+    letter-spacing: 1px;
+    &.large {
+        font-size: 16px;
+    }
+}
+
+
+a, a:hover, a:focus, a:active, a.active{
+    outline: 0;
+    color: $color_madison_approx;
+}
+
+h1 {
+    @extend %extend_1;
+    font-size: 40px;
+}
+h2 {
+    @extend %extend_1;
+    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: -1px -1px 0 $color_madison_approx
+}
+h3 {
+    @extend %extend_1;
+}
+h4 {
+    @extend %extend_1;
+}
+h5 {
+    @extend %extend_1;
+}
+h6 {
+    @extend %extend_1;
+}
