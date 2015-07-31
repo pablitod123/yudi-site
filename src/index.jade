@@ -4,7 +4,7 @@ block title
     | YUDI - Home 
 
 block content
-    include templates/nav
+    include templates/partials/nav
     header
         .container
             .row
@@ -14,8 +14,8 @@ block content
                 a#down-arrow.page-scroll.fa.fa-sort-down.fa-3x.down-arrow-margin(href='#about', style='font-style: italic')
 
 
-    include templates/footer
-    include templates/bios
+    include templates/partials/footer
+    include templates/partials/bios 
 
     //- #section01.pane.hello
     //-     .wrapper

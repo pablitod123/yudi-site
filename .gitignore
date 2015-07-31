@@ -9,7 +9,8 @@ prepros.cfg
 src/data
 src/styles/vendors
 src/scripts/
-src/templates/
+src/templates/partials
+src/templates/helpers
+src/templates/layouts
 *.md
 *.styl
-*.jade
