@@ -1,11 +1,9 @@
 
-
 .logo {
     max-width: 350px;
     height: auto;
     margin-top: 230px;
 }
-
 .spacer {
     margin: 28%;
 }
@@ -51,10 +49,6 @@ html {
         @extend %extend_3;
         background-image: none;
     }
-}
-
-aside.clients img {
-    margin: 50px auto;
 }
 
 .dropdown .open {
