@@ -27,7 +27,6 @@
 // * Page Specific
 // * Media Queries
 // * Print Styles
-@import 'vendors/normalize';
 //  @import
 //   'vendors/foundation';
 // @import
@@ -56,6 +55,7 @@
 // @import
 //   'themes/theme',
 //   'themes/admin';
+@import 'vendors/normalize';
 @import 'utils/variables';
 
 @import 'base/typography';
