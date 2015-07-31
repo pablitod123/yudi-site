@@ -428,6 +428,11 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
   font-family: Times, Times, Arial, sans-serif;
@@ -1129,11 +1134,6 @@ aside.clients img {
 .biggerborder {
   border: 7px solid #122660;
   margin-bottom: 9px;
-}
-
-html {
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 .down-arrow {

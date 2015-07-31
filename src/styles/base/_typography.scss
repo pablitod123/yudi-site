@@ -1,5 +1,9 @@
 // Typography Things
 // =================
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+} // TODO: pretty sure this is superfluous see below
 body {
     overflow-x: hidden;
     font-family: $font_1, $font_1, $font_2, $font_3;
@@ -24,7 +28,6 @@ p {
         font-size: 16px;
     }
 }
-
 
 a, a:hover, a:focus, a:active, a.active{
     outline: 0;
