@@ -55,3 +55,22 @@ h6 {
 .small-text {
     font-size: 14px;
 }
+
+.about-text {
+    padding-top: 7px;
+}
+.my-italics {
+    font-style: italic;
+}
+
+.guesttitle {
+    font-size: 30px;
+    border: 5px solid $color_dodger_blue_approx;
+    background-color: $color_madison_approx;
+    color: $white;
+    margin-bottom: 0;
+}
+.wsstext {
+    margin-top: 30px;
+    margin-bottom: -20px;
+}

@@ -1,6 +1,13 @@
-/* Styles Specific to Home Page */
+/* Section Specific Styles. Turns out portfolio and section get reused in a few places though :() */
+
+// TODO: Needs heavy refactoring to remove the deep nesting
 .img-centered {
     margin: 0 auto;
+}
+
+// Only on index
+aside.clients img {
+    margin: 50px auto;
 }
 
 #portfolio {

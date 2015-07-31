@@ -473,6 +473,27 @@ h2 {
   font-size: 14px;
 }
 
+.about-text {
+  padding-top: 7px;
+}
+
+.my-italics {
+  font-style: italic;
+}
+
+.guesttitle {
+  font-size: 30px;
+  border: 5px solid #1ba6f7;
+  background-color: #122660;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.wsstext {
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
 .btn-primary {
   border-color: #122660;
   text-transform: uppercase;
@@ -535,6 +556,16 @@ img::selection {
 
 img::-moz-selection {
   background: 0 0;
+}
+
+.photoframe {
+  max-width: 300px;
+  height: auto;
+  margin-top: 0;
+}
+
+.faded {
+  opacity: .5;
 }
 
 .navbar-default {
@@ -628,6 +659,10 @@ img::-moz-selection {
   margin-top: 0;
 }
 
+.mydropdown {
+  color: #000;
+}
+
 header {
   text-align: left;
   color: #fff;
@@ -700,15 +735,7 @@ ul.social-buttons li a {
   transition: background-color 0.3s;
 }
 
-ul.social-buttons li a:hover {
-  background-color: #122660;
-}
-
-ul.social-buttons li a:focus {
-  background-color: #122660;
-}
-
-ul.social-buttons li a:active {
+.social-buttons li a:hover, .social-buttons li a:focus, .social-buttons li a:active {
   background-color: #122660;
 }
 
@@ -840,9 +867,13 @@ section h3.section-subheading {
   }
 }
 
-/* Styles Specific to Home Page */
+/* Section Specific Styles. Turns out portfolio and section get reused in a few places though :() */
 .img-centered {
   margin: 0 auto;
+}
+
+aside.clients img {
+  margin: 50px auto;
 }
 
 #portfolio .portfolio-item {
@@ -1081,31 +1112,8 @@ section h3.section-subheading {
   color: #122660;
 }
 
-.about-text {
-  padding-top: 7px;
-}
-
-.my-italics {
-  font-style: italic;
-}
-
-.photoframe {
-  max-width: 300px;
-  height: auto;
-  margin-top: 0;
-}
-
-.guesttitle {
-  font-size: 30px;
-  border: 5px solid #1ba6f7;
-  background-color: #122660;
+.white {
   color: #fff;
-  margin-bottom: 0;
-}
-
-.wsstext {
-  margin-top: 30px;
-  margin-bottom: -20px;
 }
 
 .logo {
@@ -1114,45 +1122,13 @@ section h3.section-subheading {
   margin-top: 230px;
 }
 
-.navlogo {
-  max-width: 60px;
-  height: auto;
-  margin-top: 0;
-}
-
-.custlightblue {
-  background-color: #1ba6f7;
-  opacity: 0.5;
-}
-
-.faded {
-  opacity: .5;
-}
-
-.resize {
-  max-height: auto;
-  max-width: 500px;
-}
-
 .spacer {
   margin: 28%;
-}
-
-.titletext {
-  font-size: 550px;
 }
 
 .biggerborder {
   border: 7px solid #122660;
   margin-bottom: 9px;
-}
-
-.mydropdown {
-  color: #000;
-}
-
-.blue {
-  color: #122660;
 }
 
 html {
@@ -1182,10 +1158,6 @@ html {
   background-position: center center;
   background-repeat: none;
   background-size: cover;
-}
-
-.white {
-  color: #fff;
 }
 
 .open .dropdown-toggle.btn-primary {

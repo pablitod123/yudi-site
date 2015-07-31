@@ -1,71 +1,25 @@
 
 
-
-.about-text {
-    padding-top: 7px;
-}
-.my-italics {
-    font-style: italic;
-}
-.photoframe {
-    max-width: 300px;
-    height: auto;
-    margin-top: 0;
-}
-.guesttitle {
-    font-size: 30px;
-    border: 5px solid $color_dodger_blue_approx;
-    background-color: $color_madison_approx;
-    color: $white;
-    margin-bottom: 0;
-}
-.wsstext {
-    margin-top: 30px;
-    margin-bottom: -20px;
-}
 .logo {
     max-width: 350px;
     height: auto;
     margin-top: 230px;
 }
-.navlogo {
-    max-width: 60px;
-    height: auto;
-    margin-top: 0;
-}
 
-
-.custlightblue {
-    background-color: $color_dodger_blue_approx;
-    opacity: 0.5;
-}
-.faded {
-    opacity: .5;
-}
-.resize {
-    max-height: auto;
-    max-width: 500px;
-}
 .spacer {
     margin: 28%;
 }
-.titletext {
-    font-size: 550px;
-}
+
 .biggerborder {
     border: 7px solid $color_madison_approx;
     margin-bottom: 9px;
 }
-.mydropdown {
-    color: $black;
-}
-.blue {
-    color: $color_madison_approx;
-}
+
 html {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 .down-arrow {
     text-align: center;
 }
@@ -88,11 +42,6 @@ html {
     background-size: cover;
 }
 
-.white {
-    color: $white;
-}
-
-
 .open .dropdown-toggle {
     &.btn-primary {
         @extend %extend_2;
@@ -103,6 +52,7 @@ html {
         background-image: none;
     }
 }
+
 aside.clients img {
     margin: 50px auto;
 }
