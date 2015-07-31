@@ -1,0 +1,29 @@
+extends templates/wrapper
+
+block title
+    | YUDI - Home
+
+block content
+
+    include templates/nav
+
+    header
+        .container
+            .row
+              .col-lg-12.spacer.col-md-0
+              |         
+              .down-arrow
+                a#down-arrow.page-scroll.fa.fa-sort-down.fa-3x.down-arrow-margin(href='#about', style='font-style: italic')
+
+
+    //- #section01.pane.hello
+    //-     .wrapper
+    //-         include data/hello
+    //-         a( class="next wow bounceInUp", href="#section02", data-wow-delay="3s" ) NEX
+
+    //- #section06.pane.contact
+    //-     .wrapper
+    //-         a( class="prev",href="#section05" ) PREV
+    //-         include data/contact
+
+    
