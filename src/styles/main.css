@@ -1082,6 +1082,20 @@ aside.clients img {
   border-style: none;
 }
 
+.team__head {
+  letter-spacing: 3px;
+  color: black;
+}
+
+.calendar__head {
+  padding-top: 30px;
+  letter-spacing: 2px;
+}
+
+.calendar__row {
+  padding-bottom: 70px;
+}
+
 .bg-dark-blue {
   background-color: #122660;
 }
