@@ -1,19 +1,17 @@
-
-
+//- Depends on curriculum_help for cuntions to work
 section.bg-light-gray
   .container.text-center
     .row
-      .col-lg-12
-        h1.curriculum__head Curriculum
+      +curriculum__mast('Curriculum')
     .row
       +curriculum__head('Fall 2014')
     br
     .row
+      //- Lesson name, videoStatus, slideStatus
       .col-sm-2
       +displayLecture(lesson01,true,true)
       .col-sm-2
       +displayLecture(lesson02,true,true)
-
     .row
       +curriculum__head('Spring 2015')
     .row
@@ -21,7 +19,6 @@ section.bg-light-gray
       +displayLecture(lesson04,true,true)
       +displayLecture(lesson05, false,false)
       +displayLecture(lesson06,false,false)
-    // THIRD ROW
     .row
       +displayLecture(lesson07,false,false)
       +displayLecture(lesson08,false,false)

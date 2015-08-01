@@ -1,10 +1,11 @@
 //- no need to trigger modals on this page.
 //- use mixin by declaring whether slides/videos are active or not
+// depends on curriculumData.jade file 
 mixin displayLecture(lecture, activeSlides, activeVideo)
     .col-sm-3
       .team-member
-        a.portfolio-link
-          img.img-responsive.faded(src="assets/img/labels/#{lecture.pic}", alt='')
+        a
+          img.img-responsive.faded(src="assets/img/labels/#{lecture.pic}", alt="#{lecture.name}")
         p.black-text
           b=lecture.name
         .row
@@ -25,3 +26,7 @@ mixin curriculum__head(season)
   .col-lg-4.col-lg-offset-4
         .curriculum__head
           p.curriculum__title=season
+
+mixin curriculum__mast(pageTitle)
+  .col-lg-12
+    h1.curriculum__head=pageTitle

@@ -479,7 +479,7 @@ h2 {
   text-align: left;
 }
 
-.guest__title, .curriculum__title {
+.guest__title {
   font-size: 30px;
   background-color: #122660;
   color: #fff;
@@ -487,10 +487,20 @@ h2 {
   text-align: center;
 }
 
-.guest__header, .curriculum__title {
+.guest__header {
   border: 7px solid #122660;
   margin-top: 10px;
   margin-bottom: 70px;
+}
+
+.curriculum__title {
+  border: 7px solid #122660;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  font-size: 30px;
+  background-color: #122660;
+  color: #fff;
+  text-align: center;
 }
 
 .wsstext {
@@ -577,6 +587,20 @@ h2 {
   font-weight: bold;
   color: #122660;
   text-transform: none;
+}
+
+.roster__list {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #122660;
+  display: block;
+  min-width: 190px;
+}
+
+.roster__list > li {
+  list-style: none;
+  margin: 0 5 5px;
+  display: inline-block;
 }
 
 .btn-primary {
