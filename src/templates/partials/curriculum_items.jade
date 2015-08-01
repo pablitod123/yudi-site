@@ -1,3 +1,27 @@
+//- no need to trigger modals on this page.
+//- use mixin by declaring whether slides/videos are active or not
+mixin displayLecture(lecture, activeSlides, activeVideo)
+    .col-sm-3
+      .team-member
+        a.portfolio-link
+          img.img-responsive.faded(src="assets/img/labels/#{lecture.pic}", alt='')
+        p.black-text
+          b=lecture.name
+        .row
+          .col-sm-4.col-sm-offset-1
+            p
+              if activeSlides === true
+                a.btn.btn-primary(href="lectures/#{lecture.slides}", target='_blank', role='button') Slides
+              else
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Slides
+          .col-sm-2
+          .col-sm-4
+            p
+              if activeVideo === true
+                a.btn.btn-primary(href="lectures/#{lecture.video}", target='_blank', role='button') Video
+              else
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Video
+
 section.bg-light-gray
   .container
     .row
@@ -5,140 +29,139 @@ section.bg-light-gray
         h1.section-heading(style='letter-spacing: 3px') Curriculum
     .row
       .col-lg-4.col-lg-offset-4
-        .curriculum_header
-          p.curriculum_title Fall 2014
+        .curriculum__head
+          p.curriculum__title.text-center  Fall 2014 
     br
     .row
-      .col-sm-3.col-sm-offset-2
-        .team-member
-          a.portfolio-link(data-toggle='modal', href='#trynin')
-            img.img-responsive.faded(alt='', src='assets/img/labels/stocks.jpg')
-          p.black-text(style='font-weight: bold') Introduction to Basic Concepts of Finance
-          .row
-            .col-sm-4.col-sm-offset-1
-              p
-                a.btn.btn-primary(href='lectures/lecture1.pdf', target='_blank') Slides
-            .col-sm-2
-            .col-sm-4
-              p
-                a.btn.btn-primary(href='https://www.youtube.com/watch?v=53MnV_-vCUo', target='_blank') Video
+      .col-sm-2
+      +displayLecture(lesson01,true,true)
       .col-sm-2
       .col-sm-3
         .team-member
-          a.portfolio-link(data-toggle='modal', href='#trynin')
-            img.img-responsive.faded(alt='', src='assets/img/labels/sprout.jpg')
-          p.black-text(style='font-weight: bold') Portfolio Construction and Management
+          a.portfolio-link(href='#trynin', data-toggle='modal')
+            img.img-responsive.faded(src='assets/img/labels/sprout.jpg', alt='')
+          p.black-text
+            b Portfolio Construction and Management
           .row
             .col-sm-4.col-sm-offset-1
               p
-                a.btn.btn-primary(href='lectures/lecture2.pdf', target='_blank') Slides
+                a.btn.btn-primary(href='lectures/lecture2.pdf', target='_blank', role='button') Slides
             .col-sm-2
             .col-sm-4
               p
-                a.btn.btn-primary(href='https://www.youtube.com/watch?v=erB3G8aJepQ', target='_blank') Video
+                a.btn.btn-primary(href='https://www.youtube.com/watch?v=erB3G8aJepQ', target='_blank', role='button') Video
+
     .row
       .col-lg-4.col-lg-offset-4
-        .curriculum_header
-          p.curriculum_title Spring 2015
+        .curriculum__head
+          p.curriculum__title.text-center  Spring 2015 
     br
     // SECOND ROW
     .row
       .col-sm-3
         .team-member
-          a.portfolio-link(data-toggle='modal', href='#trynin')
-            img.img-responsive.faded(alt='', src='assets/img/labels/wall_street.jpg')
-          p.black-text(style='font-weight: bold') Developing Investment Strategy
+          a.portfolio-link(href='#trynin', data-toggle='modal')
+            img.img-responsive.faded(src='assets/img/labels/wall_street.jpg', alt='')
+          p.black-text
+            b Developing Investment Strategy
           .row
             .col-sm-4.col-sm-offset-1
               p
-                a.btn.btn-primary(href='lectures/lecture3.pdf') Slides
+                a.btn.btn-primary(href='lectures/lecture3.pdf', role='button') Slides
             .col-sm-2
             .col-sm-4
               p
-                a.btn.btn-primary(href='#') Video
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Video
       .col-sm-3
         .team-member
-          a.portfolio-link(data-toggle='modal', href='#trynin')
-            img.img-responsive.faded(alt='', src='assets/img/labels/balance.jpg')
-          p.black-text(style='font-weight: bold')
-            | Interpreting SEC Filings
-            br
-            br
+          a.portfolio-link(href='#trynin', data-toggle='modal')
+            img.img-responsive.faded(src='assets/img/labels/balance.jpg', alt='')
+          p.black-text
+            b
+              | Interpreting SEC Filings 
+              br
+              br
           .row
             .col-sm-4.col-sm-offset-1
               p
-                a.btn.btn-primary(href='lectures/lecture4.pdf') Slides
+                a.btn.btn-primary(href='lectures/lecture4.pdf', role='button') Slides
             .col-sm-2
             .col-sm-4
               p
-                a.btn.btn-primary(href='https://www.youtube.com/watch?v=VXoBGJw4T9k&feature=youtu.be') Video
+                a.btn.btn-primary(href='https://www.youtube.com/watch?v=VXoBGJw4T9k&feature=youtu.be', role='button') Video
       .col-sm-3
         .team-member
-          a.portfolio-link(data-toggle='modal', href='#trynin')
-            img.img-responsive.faded(alt='', src='assets/img/labels/cash.jpg')
-          p.black-text(style='font-weight: bold') Fundamental vs. Technical Analysis
+          a.portfolio-link(href='#trynin', data-toggle='modal')
+            img.img-responsive.faded(src='assets/img/labels/cash.jpg', alt='')
+          p.black-text
+            b Fundamental vs. Technical Analysis
           .row
             .col-sm-4.col-sm-offset-1
               p
-                a.btn.btn-primary(href='#') Slides
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Slides
             .col-sm-2
             .col-sm-4
               p
-                a.btn.btn-primary(href='#') Video
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Video
       .col-sm-3
         .team-member
-          a.portfolio-link(data-toggle='modal', href='#trynin')
-            img.img-responsive.faded(alt='', src='assets/img/labels/managing.jpg')
-          p.black-text(style='font-weight: bold')
-            | Discounted Cash Flow
-            br
-            br
+          a.portfolio-link(href='#trynin', data-toggle='modal')
+            img.img-responsive.faded(src='assets/img/labels/managing.jpg', alt='')
+          p.black-text
+            b
+              | Discounted Cash Flow 
+              br
+              br
           .row
             .col-sm-4.col-sm-offset-1
               p
-                a.btn.btn-primary(href='assets/img/labels/stocks.jpg') Slides
+                a.btn.btn-primary(href='assets/img/labels/stocks.jpg', disabled='disabled', role='button') Slides
             .col-sm-2
             .col-sm-4
               p
-                a.btn.btn-primary(href='#') Video
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Video
     // THIRD ROW
     .row
       .col-sm-3
         .team-member
-          a.portfolio-link(data-toggle='modal', href='#trynin')
-            img.img-responsive.faded(alt='', src='assets/img/labels/techan.jpg')
-          p.black-text(style='font-weight: bold') Deeper Understanding of Technical Analysis
+          a.portfolio-link(href='#trynin', data-toggle='modal')
+            img.img-responsive.faded(src='assets/img/labels/techan.jpg', alt='')
+          p.black-text
+            b Deeper Understanding of Technical Analysis
           .row
             .col-sm-4.col-sm-offset-1
               p
-                a.btn.btn-primary(href='#') Slides
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Slides
             .col-sm-2
             .col-sm-4
               p
-                a.btn.btn-primary(href='#') Video
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Video
       .col-sm-3
         .team-member
-          a.portfolio-link(data-toggle='modal', href='#trynin')
-            img.img-responsive.faded(alt='', src='assets/img/labels/investing.jpg')
-          p.black-text(style='font-weight: bold') Investing in Diversified Markets
+          a.portfolio-link(href='#trynin', data-toggle='modal')
+            img.img-responsive.faded(src='assets/img/labels/investing.jpg', alt='')
+          p.black-text
+            b Investing in Diversified Markets
           .row
             .col-sm-4.col-sm-offset-1
               p
-                a.btn.btn-primary(href='#') Slides
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Slides
             .col-sm-2
             .col-sm-4
               p
-                a.btn.btn-primary(href='#') Video
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Video
       .col-sm-3
         .team-member
-          a.portfolio-link(data-toggle='modal', href='#trynin')
-            img.img-responsive.faded(alt='', src='assets/img/labels/man_walking.jpg')
-          p.black-text(style='font-weight: bold') Managing Money and Expectations
+          a.portfolio-link(href='#trynin', data-toggle='modal')
+            img.img-responsive.faded(src='assets/img/labels/man_walking.jpg', alt='')
+          p.black-text
+            b Managing Money and Expectations
           .row
             .col-sm-4.col-sm-offset-1
               p
-                a.btn.btn-primary(href='#') Slides
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Slides
             .col-sm-2
             .col-sm-4
               p
-                a.btn.btn-primary(href='#') Video
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Video
+

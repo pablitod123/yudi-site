@@ -509,7 +509,7 @@ h2 {
   text-transform: none;
 }
 
-.team__head {
+.team__head, .curriculum__head {
   letter-spacing: 3px;
   color: #122660;
 }
