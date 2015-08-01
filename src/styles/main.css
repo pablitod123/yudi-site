@@ -909,6 +909,9 @@ section h3.section-subheading {
 }
 
 @media (min-width: 768px) {
+  .navbar-default {
+    padding: 12px;
+  }
   .navbar-default.navbar-shrink {
     padding: 10px 0;
     background-color: #122660;
