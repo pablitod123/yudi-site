@@ -1,10 +1,6 @@
 mail/
-font-awesome-4.1.0/
-mail/
 prepros.cfg
 src/styles/vendors
 src/scripts/
-src/templates/partials
-src/templates/helpers
 *.md
 *.styl

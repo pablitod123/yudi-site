@@ -1,24 +1,27 @@
 extends templates/wrapper
-
-block vars
+block vars 
+    //- Load data about users
     include data/boardData
 
 block title
     | YUDI - Homepage
 
 block content
+    //- Navbar
     include templates/layouts/nav
     
     include templates/partials/header
+    //- Announcements Section
     include templates/partials/calendar
     include templates/partials/about
     include templates/partials/team
     include templates/partials/contact
 
-    // - Global Bottom
+    //- Global Bottom
     include templates/layouts/footer
-    include templates/partials/bios
-
+    //- Load Bios include templates/partials/bios
+    each item in members
+        +showModal(item)
     
 block scripts
     script( src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
