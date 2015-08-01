@@ -1,11 +1,10 @@
 // Typography Things
 // =================
-html {
-    max-width: 100%;
-    overflow-x: hidden;
+html {// this was doing strange things so I stripped it out
+    // max-width: 100%;
+    // overflow-x: hidden;
 } // TODO: pretty sure this is superfluous see below
 body {
-    overflow-x: hidden;
     font-family: $font_1, $font_1, $font_2, $font_3;
     webkit-tap-highlight-color: $color_madison_approx;
     max-width: 100%;

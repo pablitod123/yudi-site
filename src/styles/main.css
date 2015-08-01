@@ -428,13 +428,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
 }
 
-html {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 body {
-  overflow-x: hidden;
   font-family: "Droid Serif", "Droid Serif", "Arial", sans-serif;
   webkit-tap-highlight-color: #122660;
   max-width: 100%;
