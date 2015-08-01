@@ -800,22 +800,16 @@ header .intro-lead-in {
 footer {
   padding: 25px 0;
   text-align: center;
+  background: #02040a;
 }
 
-footer span.copyright {
-  text-transform: uppercase;
-  text-transform: none;
-  font-family: "Droid Serif", "Arial", sans-serif;
-  line-height: 40px;
-  font-size: 12px;
-}
-
-footer ul.quicklinks {
-  margin-bottom: 0;
-  text-transform: uppercase;
-  text-transform: none;
-  font-family: "Montserrat", "Droid Serif", "Arial", sans-serif;
-  line-height: 40px;
+footer .copyright {
+  padding-top: 18px;
+  display: inline-block;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: left;
+  color: #ddd;
 }
 
 ul.social-buttons {
@@ -823,7 +817,7 @@ ul.social-buttons {
 }
 
 ul.social-buttons li a {
-  display: block;
+  display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -833,10 +827,31 @@ ul.social-buttons li a {
   color: #fff;
   background-color: #222;
   transition: background-color 0.3s;
+  margin-bottom: 15px;
 }
 
 .social-buttons li a:hover, .social-buttons li a:focus, .social-buttons li a:active {
   background-color: #122660;
+}
+
+.wmark {
+  background-color: #3A539B;
+  text-align: right;
+  color: #EEF;
+  min-height: 30px;
+  padding: 20px 30px 10px 20px;
+  font-family: lato;
+}
+
+.makemark {
+  color: #FC9 !important;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.makemark:hover, .makemark:visited {
+  color: #EACC0B !important;
+  text-decoration: none;
 }
 
 section {

@@ -1,20 +1,22 @@
 footer {
     padding: 25px 0;
     text-align: center;
-    span.copyright {
-        text-transform: uppercase;
-        text-transform: none;
-        font-family: $font_1, $font_2, $font_3;
-        line-height: 40px;
-        font-size: 12px;
+    background: #02040a;
+    .copyright {
+        padding-top:18px;
+        display: inline-block;
+        line-height: 20px;
+        font-size: 14px;
+        text-align:left;
+        color:#ddd;
     }
-    ul.quicklinks {
-        margin-bottom: 0;
-        text-transform: uppercase;
-        text-transform: none;
-        font-family: $font_4, $font_1, $font_2, $font_3;
-        line-height: 40px;
-    }
+    // ul.quicklinks {
+    //     // margin-bottom: 0;
+    //     // text-transform: uppercase;
+    //     // text-transform: none;
+    //     // font-family: $font_4, $font_1, $font_2, $font_3;
+    //     // line-height: 40px;
+    // }
 }
 
 // Social Buttons currently only on index
@@ -22,7 +24,7 @@ footer {
 ul.social-buttons {
     margin-bottom: 0;
     li a {
-        display: block;
+        display: inline-block;
         width: 40px;
         height: 40px;
         border-radius: 100%;
@@ -32,9 +34,29 @@ ul.social-buttons {
         color: $white;
         background-color: $color_log_cabin_approx;
         transition: background-color .3s;
+        margin-bottom:15px;
     }
 }
 
 .social-buttons li a:hover, .social-buttons li a:focus, .social-buttons li a:active {
     background-color: $color_madison_approx;
+}
+
+// Watermark stuff
+.wmark {
+    background-color: #3A539B;
+    text-align: right;
+    color: #EEF;
+    min-height: 30px;
+    padding: 20px 30px 10px 20px;
+    font-family:lato;
+}
+.makemark {
+    color: #FC9!important;
+    font-weight: 600;
+    margin-left:8px;
+}
+.makemark:hover, .makemark:visited {
+    color: #EACC0B!important;
+    text-decoration: none;
 }
