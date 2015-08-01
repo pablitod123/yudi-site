@@ -25,4 +25,4 @@ mixin showModal(person)
       a.portfolio-link(data-toggle='modal', href=("##{person.id}"))
         img.img-responsive.img-circle(alt=(person.name), src=("assets/img/team/#{person.pic}"))                 
       h4.black-text=person.name               
-      p.text-muted.black-text.small-text=person.subtitle
+      p.team__caption=person.subtitle

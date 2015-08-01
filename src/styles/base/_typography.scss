@@ -10,7 +10,6 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
 .text-muted {
     color: $color_log_cabin_approx;
 }
@@ -39,7 +38,6 @@ h1 {
 }
 h2 {
     @extend %extend_1;
-    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
     text-shadow: -1px -1px 0 $color_madison_approx
 }
 h3 {
@@ -58,8 +56,9 @@ h6 {
     font-size: 14px;
 }
 
-.about-text {
+.about__text {
     padding-top: 7px;
+    text-indent:50px
 }
 .my-italics {
     font-style: italic;
@@ -75,4 +74,32 @@ h6 {
 .wsstext {
     margin-top: 30px;
     margin-bottom: -20px;
+}
+
+// #TEAM section typography
+.team__caption {
+    color: #122660;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.team__head {
+    letter-spacing: 3px;
+    color: #122660;
+}
+.calendar__head {
+    padding-top:30px; 
+    letter-spacing: 2px;
+}
+.calendar__row {
+    padding-bottom:70px;
+}
+// Donate section: Clients (footnote: unhelpful name)
+.donate__head {
+    color: #fff;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom:35px;
+}
+.client {
+    text-align: center;
 }
