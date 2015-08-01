@@ -1,14 +1,13 @@
 
 mixin buildColumns(people)
-    .col-md-2.text-left
-        ul.roster__list(style='letter-spacing: 0px')
+    .col-md-2
+        ul.roster__list
           each person in people
+              - person = person.trim()
               li=person
 
-// split array of names into groups of 
-- var chunkArray = function(people,chunkSize) {
-    while(people.length) {
-        console.log(people.splice(0,chunksize));
-    }
 
-}
+mixin memberHead(title)
+      .col-lg-12
+        h1.member__head=title
+          block

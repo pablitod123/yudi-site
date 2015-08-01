@@ -588,19 +588,6 @@ h2 {
   text-transform: none;
 }
 
-.roster__list {
-  font-size: 16px;
-  line-height: 1.75;
-  color: #122660;
-  display: block;
-  min-width: 220px;
-}
-
-.roster__list > li {
-  list-style: none;
-  margin: 0 5 5px;
-}
-
 .btn-primary {
   border-color: #122660;
   text-transform: uppercase;
@@ -1287,4 +1274,28 @@ aside.clients img {
 
 .competition b {
   color: #2a4cb2;
+}
+
+.roster__list {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #122660;
+  display: block;
+  min-width: 220px;
+  text-align: left;
+}
+
+.roster__list > li {
+  list-style: none;
+  margin: 0 5 5px;
+}
+
+.member__head {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.member__caption {
+  margin: 50px 0;
 }

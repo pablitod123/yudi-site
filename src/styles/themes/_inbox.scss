@@ -27,3 +27,28 @@
 .competition b {
     color: $color_cerulean_blue_approx;
 }
+
+// fixing up the member roster page
+.roster__list {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #122660;
+    display:block;
+    min-width:220px;
+    text-align:left;
+}
+
+.roster__list > li{
+    list-style: none;
+    margin: 0 5 5px;  
+}
+
+.member__head {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom:30px;
+}
+
+.member__caption {
+    margin: 50px 0;
+}

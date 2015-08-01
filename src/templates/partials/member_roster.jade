@@ -1,27 +1,22 @@
 section.bg-light-gray
   .container
     .row
-      .col-lg-12
-        h3.text-center Membership Rules - 50% Attendance Minimum
-        p
-          | You must be present at a minumum of one-half of each semester's offered lecture or speaker events to become a member. You must
-          | also compete in the YUDI competition to remain eligible. If you have any questions, please email yaleudi@gmail.com.
-      .col-lg-12
-        h3.text-center Attendance Tracking
-        p Go to a 
-          a(href='./qr.html', style='color: #FF3732') QR Code Generator
-          |  and create a QR code with your 
-          strong first and last name
-          | . In order for your attendance to be counted you 
-          em must
-          |  have your QR code scanned at each YUDI event.
-        .text-center
-          a(href='./qr.html', target='_blank')
-            button.btn.btn-primary.btn-lg QR Generator
+      +memberHead('Membership Rules - 50% Attendance Minimum')
+      p.member__caption You must be present at a minumum of one-half of each semester's offered lecture or speaker events to become a member. You must also compete in the YUDI competition to remain eligible. If you have any questions, please email yaleudi@gmail.com.
+      +memberHead('Attendance Tracking')
+      p.member__caption Go to a 
+        a(href='./qr.html', style='color: #FF3732') QR Code Generator
+        |  and create a QR code with your 
+        strong first and last name
+        | . In order for your attendance to be counted you 
+        em must
+        |  have your QR code scanned at each YUDI event.
+      .text-center
+        a(href='./qr.html', target='_blank')
+          button.btn.btn-primary.btn-lg QR Generator
     br
     .row
-      .col-lg-12.text-center
-        h1.section-heading Members Fall 2014
+        +memberHead('Fall 2014')
     .row
       while members.length
         +buildColumns(members.splice(0,18))
