@@ -63,7 +63,7 @@ h6 {
     text-align: left;
 }
 
-.guest__title {
+.guest__title, .curriculum__title {
     font-size: 30px;
     // border: px solid $color_dodger_blue_approx;
     background-color: $color_madison_approx;
@@ -72,7 +72,7 @@ h6 {
     text-align:center;
 }
 
-.guest__header {
+.guest__header, .curriculum__title {
    border: 7px solid $color_madison_approx;
    margin-top:10px;
    margin-bottom: 70px;
