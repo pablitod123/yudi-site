@@ -20,7 +20,7 @@ p {
     font-size: 20px;
     line-height: 1.75;
     color: $color_madison_approx;
-    font-weight: 20;
+    // font-weight: 20;
     letter-spacing: 1px;
     &.large {
         font-size: 16px;
@@ -176,11 +176,11 @@ h6 {
     line-height: 1.75;
     color: #122660;
     display:block;
-    min-width:190px;
+    min-width:220px;
 }
 
 .roster__list > li{
     list-style: none;
     margin: 0 5 5px;
-    display:inline-block;
+
 }

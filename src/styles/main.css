@@ -447,7 +447,6 @@ p {
   font-size: 20px;
   line-height: 1.75;
   color: #122660;
-  font-weight: 20;
   letter-spacing: 1px;
 }
 
@@ -594,13 +593,12 @@ h2 {
   line-height: 1.75;
   color: #122660;
   display: block;
-  min-width: 190px;
+  min-width: 220px;
 }
 
 .roster__list > li {
   list-style: none;
   margin: 0 5 5px;
-  display: inline-block;
 }
 
 .btn-primary {
