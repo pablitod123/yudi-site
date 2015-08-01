@@ -473,12 +473,10 @@ h2 {
 }
 
 .about__text {
-  padding-top: 7px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-indent: 50px;
-}
-
-.my-italics {
-  font-style: italic;
+  text-align: left;
 }
 
 .guesttitle {
@@ -497,7 +495,7 @@ h2 {
 .team__caption {
   color: #122660;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .team__head {
@@ -523,6 +521,34 @@ h2 {
 
 .client {
   text-align: center;
+}
+
+.donate__caption {
+  font-size: 24px;
+}
+
+.donate__subcaption {
+  font-size: 19px;
+  font-style: italics;
+}
+
+.donate__subrow {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.donate__perk, .about__perk {
+  text-align: left;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.donate__box {
+  margin-top: 40px;
+}
+
+.donate__box > p {
+  margin-top: 20px;
 }
 
 .btn-primary {
@@ -1013,7 +1039,7 @@ aside.clients img {
   margin: 0 auto;
   border: 7px solid #fff;
   opacity: 1;
-  transition: opacity 0.15s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
 }
 
 .team-member img:hover {
@@ -1024,10 +1050,6 @@ aside.clients img {
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
-}
-
-.team-member p {
-  margin-top: 0;
 }
 
 .portfolio-modal .modal-content {

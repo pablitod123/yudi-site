@@ -57,11 +57,10 @@ h6 {
 }
 
 .about__text {
-    padding-top: 7px;
-    text-indent:50px
-}
-.my-italics {
-    font-style: italic;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-indent: 50px;
+    text-align: left;
 }
 
 .guesttitle {
@@ -75,13 +74,13 @@ h6 {
     margin-top: 30px;
     margin-bottom: -20px;
 }
-
 // #TEAM section typography
 .team__caption {
     color: #122660;
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 4px;
 }
+
 .team__head {
     letter-spacing: 3px;
     color: #122660;
@@ -102,4 +101,31 @@ h6 {
 }
 .client {
     text-align: center;
+}
+
+.donate__caption {
+    font-size:24px;
+}
+.donate__subcaption {
+    font-size:19px;
+    font-style: italics;
+}
+
+.donate__subrow {
+    margin-top: 50px;
+    margin-bottom:30px;
+}
+
+.donate__perk, .about__perk {
+    text-align: left;
+    font-size:16px;
+    margin-top:20px;
+}
+
+.donate__box {
+    margin-top:40px;
+}
+
+.donate__box > p{
+    margin-top:20px;
 }

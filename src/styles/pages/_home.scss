@@ -79,7 +79,7 @@ aside.clients img {
         margin: 0 auto;
         border: 7px solid $white;
         opacity: 1;
-        transition: opacity .15s ease-in-out; //TODO: What is the point of such a short transition?
+        transition: opacity .6s ease-in-out; 
         &:hover {
             opacity: 0.5;
         }
@@ -88,9 +88,6 @@ aside.clients img {
         margin-top: 25px;
         margin-bottom: 0;
         text-transform: none;
-    }
-    p {
-        margin-top: 0;
     }
 }
 
