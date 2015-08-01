@@ -1,15 +1,16 @@
 extends templates/wrapper
+block vars 
+    include data/lectureData
 
 block title
     | YUDI - Guest Lectures
 
 block content
-    //- Navbar
     include templates/layouts/nav_basic
     
     include templates/partials/lecture_display
     include templates/partials/lecture_modal
-
+    
     include templates/layouts/footer
     
 block scripts

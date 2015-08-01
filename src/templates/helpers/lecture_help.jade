@@ -1,1 +1,21 @@
-p help
+- var lecturer= function(modalID, name, subtitle, pic, date){this.id = modalID; this.name = name; this.subtitle=subtitle; this.pic = pic; this.date = date; this.story = "test story"; return this}
+- var lecture01 = new lecturer("garcia", "Anthony Garcia", "BDC @ Morgan Stanley, Merrill Lynch (past)", "anthonyg.jpg")
+
+
+mixin showLecture(person)
+    .col-sm-2
+      .team-member
+        a.portfolio-link(data-toggle='modal', href='##{person.id}')
+          img.img-responsive.img-circle(alt='', src="assets/img/lectures/#{person.pic}")
+        h4.lecture__h=person.name
+        p.lecture__p=person.subtitle
+          em=person.date
+
+mixin semesterHead(seasonName)
+    .col-lg-4.col-lg-offset-4
+      .guest__header
+        p.guest__title=seasonName
+
+mixin pageHead(title)
+  .col-lg-12.text-center
+    h1.team__head=title

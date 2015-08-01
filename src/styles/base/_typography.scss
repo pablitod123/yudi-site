@@ -63,13 +63,21 @@ h6 {
     text-align: left;
 }
 
-.guesttitle {
+.guest__title {
     font-size: 30px;
-    border: 5px solid $color_dodger_blue_approx;
+    // border: px solid $color_dodger_blue_approx;
     background-color: $color_madison_approx;
     color: $white;
     margin-bottom: 0;
+    text-align:center;
 }
+
+.guest__header {
+   border: 7px solid $color_madison_approx;
+   margin-top:10px;
+   margin-bottom: 70px;
+}
+
 .wsstext {
     margin-top: 30px;
     margin-bottom: -20px;
@@ -128,4 +136,17 @@ h6 {
 
 .donate__box > p{
     margin-top:20px;
+}
+
+// Lecturer Styles
+.lecture__p {
+    color: #122660;
+    font-size: 14px;
+}
+
+.lecture__h {
+    margin-top:33px;
+    font-weight: bold;
+    color: #122660;
+    text-transform: none;
 }
