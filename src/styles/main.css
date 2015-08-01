@@ -504,9 +504,19 @@ h2 {
   margin-top: 4px;
 }
 
+.team__person {
+  color: #122660;
+  text-transform: none;
+}
+
 .team__head {
   letter-spacing: 3px;
   color: #122660;
+}
+
+.team__mast {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .calendar__head {
@@ -837,20 +847,24 @@ ul.social-buttons li a {
 .wmark {
   background-color: #3A539B;
   text-align: right;
-  color: #EEF;
+  color: #F1F1F1;
   min-height: 30px;
   padding: 20px 30px 10px 20px;
   font-family: lato;
 }
 
+.wmark > p {
+  color: #6FD5DE;
+}
+
 .makemark {
-  color: #FC9 !important;
+  color: #F1F1F1 !important;
   font-weight: 600;
   margin-left: 8px;
 }
 
 .makemark:hover, .makemark:visited {
-  color: #EACC0B !important;
+  color: #F1F1F1 !important;
   text-decoration: none;
 }
 
