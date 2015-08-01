@@ -1,0 +1,27 @@
+//- no need to trigger modals on this page.
+//- use mixin by declaring whether slides/videos are active or not
+mixin displayLecture(lecture, activeSlides, activeVideo)
+    .col-sm-3
+      .team-member
+        a.portfolio-link
+          img.img-responsive.faded(src="assets/img/labels/#{lecture.pic}", alt='')
+        p.black-text
+          b=lecture.name
+        .row
+          .col-sm-4.col-sm-offset-1
+            p
+              if activeSlides === true
+                a.btn.btn-primary(href="lectures/#{lecture.slides}", target='_blank', role='button') Slides
+              else
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Slides
+          .col-sm-2
+          .col-sm-4
+            p
+              if activeVideo === true
+                a.btn.btn-primary(href="lectures/#{lecture.video}", target='_blank', role='button') Video
+              else
+                a.btn.btn-primary(href='#', disabled='disabled', role='button') Video
+mixin curriculum__head(season)
+  .col-lg-4.col-lg-offset-4
+        .curriculum__head
+          p.curriculum__title=season
