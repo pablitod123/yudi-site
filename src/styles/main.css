@@ -777,6 +777,7 @@ header {
   background-position: center center;
   background-repeat: none;
   background-size: cover;
+  margin-top: 50px;
 }
 
 header .intro-text {
