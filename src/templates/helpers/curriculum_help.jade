@@ -19,7 +19,7 @@ mixin displayLecture(lecture, activeSlides, activeVideo)
           .col-sm-4
             p
               if activeVideo === true
-                a.btn.btn-primary(href="lectures/#{lecture.video}", target='_blank', role='button') Video
+                a.btn.btn-primary(href=lecture.video, target='_blank', role='button') Video
               else
                 a.btn.btn-primary(href='#', disabled='disabled', role='button') Video
 mixin curriculum__head(season)
