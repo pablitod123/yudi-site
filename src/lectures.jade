@@ -1,0 +1,19 @@
+extends templates/wrapper
+block vars 
+    include data/lectureData
+
+block title
+    | YUDI - Guest Lectures
+
+block content
+    include templates/layouts/nav_basic
+    
+    include templates/partials/lecture_display
+    include templates/partials/lecture_modal
+    
+    include templates/layouts/footer
+    
+block scripts
+    script( src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+    script( src="assets/js/bootstrap.min.js" )
+

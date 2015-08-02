@@ -1,0 +1,11 @@
+mixin buildColumns(people)
+    .col-md-2
+        ul.roster__list
+          each person in people
+              - person = person.trim()
+              li=person
+
+mixin memberHead(title)
+      .col-lg-12
+        h1.member__head=title
+          block

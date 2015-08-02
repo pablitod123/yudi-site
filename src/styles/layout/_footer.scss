@@ -1,0 +1,67 @@
+footer {
+    padding: 25px 0;
+    text-align: center;
+    background: #02040a;
+    .copyright {
+        padding-top:18px;
+        display: inline-block;
+        line-height: 20px;
+        font-size: 14px;
+        text-align:left;
+        color:#ddd;
+    }
+    // ul.quicklinks {
+    //     // margin-bottom: 0;
+    //     // text-transform: uppercase;
+    //     // text-transform: none;
+    //     // font-family: $font_4, $font_1, $font_2, $font_3;
+    //     // line-height: 40px;
+    // }
+}
+
+// Social Buttons currently only on index
+// currently only in the footer
+ul.social-buttons {
+    margin-bottom: 0;
+    li a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        font-size: 20px;
+        line-height: 40px;
+        outline: 0;
+        color: $white;
+        background-color: $color_log_cabin_approx;
+        transition: background-color .3s;
+        margin-bottom:15px;
+    }
+}
+
+.social-buttons li a:hover, .social-buttons li a:focus, .social-buttons li a:active {
+    background-color: $color_madison_approx;
+}
+
+// Watermark stuff
+.wmark {
+    // background-color: #3A539B;
+    background-color: #04242F;
+    text-align: right;
+    color: #F1F1F1;
+    min-height: 30px;
+    padding: 20px 30px 10px 20px;
+    font-family:lato;
+}
+.wmark > p{
+    color: #6FD5DE;
+
+}
+.makemark {
+    color: #F1F1F1!important;
+    font-weight: 600;
+    margin-left:8px;
+}
+.makemark:hover, .makemark:visited {
+    color: #F1F1F1!important;
+    text-decoration: none;
+}

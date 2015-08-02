@@ -1,7 +1,6 @@
-less/
-img/
-lectures/
 mail/
-yaledesignfont/
-font-awesome-4.1.0/
-mail/
+prepros.cfg
+src/styles/vendors
+src/scripts/
+*.md
+*.styl

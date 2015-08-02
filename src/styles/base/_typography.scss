@@ -1,0 +1,172 @@
+// Typography Things
+// =================
+html {// this was doing strange things so I stripped it out
+    // max-width: 100%;
+    // overflow-x: hidden;
+} // TODO: pretty sure this is superfluous see below
+body {
+    font-family: $font_1, $font_1, $font_2, $font_3;
+    webkit-tap-highlight-color: $color_madison_approx;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.text-muted {
+    color: $color_log_cabin_approx;
+}
+.text-primary {
+    color: $color_dodger_blue_approx;
+}
+p {
+    font-size: 20px;
+    line-height: 1.75;
+    color: $color_madison_approx;
+    // font-weight: 20;
+    letter-spacing: 1px;
+    &.large {
+        font-size: 16px;
+    }
+}
+
+a, a:hover, a:focus, a:active, a.active{
+    outline: 0;
+    color: $color_madison_approx;
+}
+
+h1 {
+    @extend %extend_1;
+    font-size: 40px;
+}
+h2 {
+    @extend %extend_1;
+    text-shadow: -1px -1px 0 $color_madison_approx
+}
+h3 {
+    @extend %extend_1;
+}
+h4 {
+    @extend %extend_1;
+}
+h5 {
+    @extend %extend_1;
+}
+h6 {
+    @extend %extend_1;
+}
+.small-text {
+    font-size: 14px;
+}
+
+.about__text {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-indent: 50px;
+    text-align: left;
+}
+
+.guest__title,{
+    font-size: 30px;
+    // border: px solid $color_dodger_blue_approx;
+    background-color: $color_madison_approx;
+    color: $white;
+    margin-bottom: 0;
+    text-align:center;
+}
+
+.guest__header,{
+   border: 7px solid $color_madison_approx;
+   margin-top:10px;
+   margin-bottom: 70px;
+}
+
+.curriculum__title {
+   border: 7px solid $color_madison_approx;
+   margin-top:20px;
+   margin-bottom: 70px;
+   font-size: 30px;
+   background-color: $color_madison_approx;
+   color: $white;
+   text-align:center;
+}
+
+.wsstext {
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+// #TEAM section typography
+.team__caption {
+    color: #122660;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.team__person {
+    color: #122660;
+    text-transform:none
+}
+
+.team__head, .curriculum__head {
+    letter-spacing: 3px;
+    color: #122660;
+}
+
+.team__mast {
+    text-align:center;
+    margin-bottom: 50px;
+}
+.calendar__head {
+    padding-top:30px; 
+    letter-spacing: 2px;
+}
+.calendar__row {
+    padding-bottom:70px;
+}
+// Donate section: Clients (footnote: unhelpful name)
+.donate__head {
+    color: #fff;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom:35px;
+}
+.client {
+    text-align: center;
+}
+
+.donate__caption {
+    font-size:24px;
+}
+.donate__subcaption {
+    font-size:19px;
+    font-style: italics;
+}
+
+.donate__subrow {
+    margin-top: 50px;
+    margin-bottom:30px;
+}
+
+.donate__perk, .about__perk {
+    text-align: left;
+    font-size:16px;
+    margin-top:20px;
+}
+
+.donate__box {
+    margin-top:40px;
+}
+
+.donate__box > p{
+    margin-top:20px;
+}
+
+// Lecturer Styles
+.lecture__p {
+    color: #122660;
+    font-size: 14px;
+}
+
+.lecture__h {
+    margin-top:33px;
+    font-weight: bold;
+    color: #122660;
+    text-transform: none;
+}

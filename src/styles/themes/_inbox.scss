@@ -1,0 +1,68 @@
+// -------------------------------------
+//   Inbox- Styles to categorize
+// -------------------------------------
+
+// TODO: Appears to not even be used, but leaving in just in case I missed it somewhere in the navbar jungle
+.logo {
+    max-width: 350px;
+    height: auto;
+    margin-top: 230px;
+}
+
+// TODO: single magic number class is wasteful
+.spacer {
+    margin: 28%;
+}
+
+// lazy target for the networking page
+.competition b {
+    color: $color_cerulean_blue_approx;
+}
+.rankings__bg {
+    background-attachment: scroll;
+    background-image: $url_2;
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+}
+// fixing up the member roster page
+.roster__list {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #122660;
+    display:block;
+    min-width:220px;
+    text-align:left;
+}
+
+.roster__list > li{
+    list-style: none;
+    margin: 0 5 5px;  
+}
+
+.member__head {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom:30px;
+}
+
+.member__caption {
+    margin: 30px 0;
+}
+
+// Styles for the rankings page
+.rankings__mast {
+    text-align:center;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.btn__rank {
+    margin: 30px 0;
+}
+
+
+
+.rankings__caption {
+    font-style: italic;
+}

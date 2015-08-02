@@ -1,0 +1,26 @@
+// Another file that really shouldn't exist, refactor if possible
+
+::-moz-selection {
+    text-shadow: none;
+    background: $color_sunglow_approx;
+}
+::selection {
+    text-shadow: none;
+    background: $color_mercury_approx;
+}
+img::selection {
+    background: 0 0;
+}
+img::-moz-selection {
+    background: 0 0;
+}
+
+.photoframe {
+    max-width: 300px;
+    height: auto;
+    margin-top: 0;
+}
+
+.faded {
+    opacity: .5;
+}

@@ -1,0 +1,66 @@
+// Lazy ways of changing colors
+// 
+// LAZY COLOR THINGS!!!!
+// 
+// TODO: This file really should not exist.
+.bg-dark-blue {
+    background-color: $color_madison_approx;
+}
+.bg-light-blue {
+    background-color: $color_onahau_approx;
+}
+.blue { // this is for the header bar apparently
+    color: $color_madison_approx !important;
+}
+.bg-darkest-gray {
+    background-color: $color_log_cabin_approx;
+}
+.bg-light-gray {
+    background-color: $seashell;
+}
+
+#redbackground {
+    background-color: $color_guardsman_red_approx;
+    border-radius: 4px;
+}
+.bettercolor {
+    color: $web_orange;
+}
+.goodgreen {
+    color: $color_cerulean_blue_approx;
+}
+.goodred {
+    color: $color_bright_turquoise_approx;
+}
+.navblue {
+    color: $color_madison_approx;
+}
+.white-background {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 13px;
+}
+#yellowbackground {
+    background-color: $color_madison_approx;
+    border-radius: 4px;
+    margin-right: 2px;
+    border: 2px solid $web_orange;
+}
+
+.black-text {
+    color: $color_madison_approx;
+}
+
+.custlightblue {
+    background-color: $color_dodger_blue_approx;
+    opacity: 0.5;
+}
+
+.blue {
+    color: $color_madison_approx;
+}
+
+.white {
+    color: $white;
+}

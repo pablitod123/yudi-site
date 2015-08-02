@@ -1,0 +1,17 @@
+include ../helpers/bio_help
+
+section#team.bg-light-gray
+    .container
+        .row
+          .col-lg-12.team__mast
+            h1.section-heading.team__head The Team         
+            h5.black-text.text-muted (Click on Photo for Bio)     
+        .row
+          .col-sm-2
+          each item in members.slice(0,4)
+            +showPerson(item)
+        .row
+          each item in members.slice(4,10)
+            +showPerson(item)
+         
+

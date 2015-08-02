@@ -1,0 +1,13 @@
+extends templates/wrapper
+
+block title
+    | YUDI - Competition
+
+block content
+    include templates/layouts/nav_basic
+    include templates/partials/ranking_fullpage
+    include templates/layouts/footer
+    
+block scripts
+    script( src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+    script( src="assets/js/bootstrap.min.js" )

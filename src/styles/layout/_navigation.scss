@@ -1,0 +1,112 @@
+//TODO: Refactor if time permits
+.navbar-default {
+    border-color: transparent;
+    //background-color: $color_log_cabin_approx;
+    background-color: $color_madison_approx;
+    .navbar-collapse {
+        border-color: $white_2;
+    }
+    .navbar-toggle {
+        border-color: $color_madison_approx;
+        background-color: $color_madison_approx;
+        .icon-bar {
+            background-color: $white;
+        }
+        &:hover {
+            background-color: $color_madison_approx;
+        }
+        &:focus {
+            background-color: $color_madison_approx;
+        }
+    }
+    .navbar-nav> {
+        &.active>a {
+            //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+            border-radius: 0;
+            color: $white;
+            background-color: $color_dodger_blue_approx;
+            &:hover {
+                color: $white;
+                background-color: $color_dodger_blue_approx;
+            }
+            &:focus {
+                color: $white;
+                background-color: $color_dodger_blue_approx;
+            }
+        }
+        &.open>a {
+            @extend %extend_4;
+            &:hover {
+                @extend %extend_4;
+            }
+            &:focus {
+                @extend %extend_4;
+            }
+        }
+    }
+    .nav li a {
+        text-transform: uppercase;
+        font-family: $font_1, $font_2, $font_3;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #fff;
+        &:hover {
+            outline: 0;
+            color: $color_dodger_blue_approx;
+        }
+        &:focus {
+            outline: 0;
+            color: $color_dodger_blue_approx;
+        }
+    }
+}
+
+.navbar-brand {
+    font-family: $font_1, $font_2, $font_cursive;
+    color: $color_madison_approx;
+}
+
+.navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active{
+    color: $color_dodger_blue_approx;
+}
+
+.subMenu {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+.sticky {
+    top: 0;
+    position: fixed;
+}
+.navbar-space {
+    top: 790px;
+}
+
+.navlogo {
+    max-width: 60px;
+    height: auto;
+    margin-top: 0;
+}
+
+// TODO: refactor Dropdown Menu Lazy Helper class?!!
+.mydropdown {
+    color: $black;
+}
+
+.open .dropdown-toggle {
+    &.btn-primary {
+        @extend %extend_2;
+        background-image: none;
+    }
+    &.btn-xl {
+        @extend %extend_3;
+        background-image: none;
+    }
+}
+
+// TODO: can this serevice without it
+.dropdown .open {
+    background: $black;
+}

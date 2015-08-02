@@ -1,0 +1,28 @@
+mixin showModal(person)
+  div(id=person.id).portfolio-modal.modal.fade(tabindex='-1')
+    div.modal-content
+      div.container
+          .row
+            .col-lg-8.col-lg-offset-2
+              h1=person.name                    
+              h4.text-muted=person.subtitle           
+          hr
+          .row
+            .col-lg-4
+              .modal-body
+                img.img-thumbnail.photoframe(alt=(person.name), src=("assets/img/team/#{person.pic}"))                
+            .col-lg-8
+              .modal-body.text-left
+                block
+                p=person.story
+          .row
+            .col-lg-4.col-lg-offset-4
+              button.btn.btn-primary.btn-lg(data-dismiss='modal', type='button') Back
+ 
+ mixin showPerson(person)
+  .col-sm-2
+    .team-member
+      a.portfolio-link(data-toggle='modal', href=("##{person.id}"))
+        img.img-responsive.img-circle(alt=(person.name), src=("assets/img/team/#{person.pic}"))                 
+      h4.team__person=person.name               
+      p.team__caption=person.subtitle

@@ -1,0 +1,40 @@
+- var lecturer= function(modalID, name, subtitle, pic, date){this.id = modalID; this.name = name; this.subtitle=subtitle; this.pic = pic; this.date = date; return this}
+
+
+mixin showLecture(person)
+    .col-sm-2
+      .team-member
+        a.portfolio-link(data-toggle='modal', href='##{person.id}')
+          img.img-responsive.img-circle(alt='', src="assets/img/lectures/#{person.pic}")
+        h4.lecture__h=person.name
+        p.lecture__p=person.subtitle
+          em=person.date
+
+mixin semesterHead(seasonName)
+    .col-lg-4.col-lg-offset-4
+      .guest__header
+        p.guest__title=seasonName
+
+mixin pageHead(title)
+  .col-lg-12.text-center
+    h1.team__head=title
+
+mixin showModal(person)
+    div.portfolio-modal.modal.fade(id=person.id, tabindex='-1')
+      .modal-content
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              h1=person.name
+              h4=person.subtitle
+          hr
+          .row
+            .col-lg-4
+              .modal-body
+                img.img-thumbnail.photoframe(alt="#{person.name}", src="assets/img/lectures/#{person.pic}")
+            .col-lg-8
+              .modal-body.text-left
+                block
+          .row
+            .col-lg-4.col-lg-offset-4
+              button.btn.btn-primary.btn-lg(data-dismiss='modal', type='button') Back
