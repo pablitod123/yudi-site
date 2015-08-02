@@ -1264,16 +1264,16 @@ aside.clients img {
   margin: 28%;
 }
 
-.rankingsbg {
+.competition b {
+  color: #2a4cb2;
+}
+
+.rankings__bg {
   background-attachment: scroll;
   background-image: url(../img/wall_street.jpg);
   background-position: center center;
   background-repeat: none;
   background-size: cover;
-}
-
-.competition b {
-  color: #2a4cb2;
 }
 
 .roster__list {
@@ -1298,4 +1298,18 @@ aside.clients img {
 
 .member__caption {
   margin: 30px 0;
+}
+
+.rankings__mast {
+  text-align: center;
+  background-color: #fff;
+  margin-top: 50px;
+}
+
+.btn__rank {
+  margin: 30px 0;
+}
+
+.rankings__caption {
+  font-style: italic;
 }

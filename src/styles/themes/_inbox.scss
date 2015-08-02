@@ -14,20 +14,17 @@
     margin: 28%;
 }
 
-// Only on Rankings page
-.rankingsbg {
+// lazy target for the networking page
+.competition b {
+    color: $color_cerulean_blue_approx;
+}
+.rankings__bg {
     background-attachment: scroll;
     background-image: $url_2;
     background-position: center center;
     background-repeat: none;
     background-size: cover;
 }
-
-// lazy target for the networking page
-.competition b {
-    color: $color_cerulean_blue_approx;
-}
-
 // fixing up the member roster page
 .roster__list {
     font-size: 16px;
@@ -51,4 +48,21 @@
 
 .member__caption {
     margin: 30px 0;
+}
+
+// Styles for the rankings page
+.rankings__mast {
+    text-align:center;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.btn__rank {
+    margin: 30px 0;
+}
+
+
+
+.rankings__caption {
+    font-style: italic;
 }
