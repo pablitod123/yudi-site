@@ -854,7 +854,7 @@ ul.social-buttons li a {
 }
 
 .wmark {
-  background-color: #3A539B;
+  background-color: #04242F;
   text-align: right;
   color: #F1F1F1;
   min-height: 30px;
@@ -1292,10 +1292,10 @@ aside.clients img {
 
 .member__head {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
 .member__caption {
-  margin: 50px 0;
+  margin: 30px 0;
 }
